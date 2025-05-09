@@ -86,9 +86,6 @@ meu-projeto/
 ├── controllers/           # Lógica de controle das requisições
 │   └── alunoController.js
 |   └── userController.js
-├── documentos/            # Descrição do projeto e documentos 
-│   └── diagramBD.png
-|   └── wad.md
 ├── models/                # Definição de modelos de dados (estrutura do banco)
 │   └── alunos.js
 │   └── userModel.js
@@ -121,10 +118,12 @@ meu-projeto/
 ├── .gitignore             # Arquivo para ignorar arquivos no      Git (ex: node_modules)
 ├── app.js              # Arquivo principal que inicializa o servidor
 ├── jest.config.js         # Arquivo de configuração do Jest
+├── modelo-banco.png       # Diagrama do Banco de Dados
 ├── package-lock.json      # Gerenciador de dependências do Node.js
 ├── package.json           # Gerenciador de dependências do Node.js
 ├── readme.md              # Documentação do projeto (Markdown)
-└── rest.http              # Teste de endpoints (opcional)
+├── rest.http              # Teste de endpoints (opcional)
+└──  wad.md                # Web Aplication Document (documentação do projeto)
 ```
 
 Contribuição
