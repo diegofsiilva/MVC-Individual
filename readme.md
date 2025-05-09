@@ -1,25 +1,26 @@
-# Boilerplate MVC em Node.js com PostgreSQL
+# Plataforma de Eventos MVC em Node.js com PostgreSQL
 
-Este projeto é um boilerplate básico para uma aplicação Node.js seguindo o padrão MVC (Model-View-Controller), utilizando PostgreSQL como banco de dados.
+Este projeto é uma Plataforma de Eventos (DIEvents) básico para uma aplicação Node.js seguindo o padrão MVC (Model-View-Controller), utilizando PostgreSQL como banco de dados.
 
 ## Requisitos
 
-- Node.js (versão X.X.X)
-- PostgreSQL (versão X.X.X)
+- Node.js (versão 22.13.1)
+- PostgreSQL (versão 17.0.0)
 
 ## Instalação
 
 1. **Clonar o repositório:**
 
 ```bash
-   git clone https://github.com/seu-usuario/seu-projeto.git
-   cd seu-projeto
+   git clone https://github.com/diegofsiilva/MVC-Individual.git
+   cd MVC-individual 
 ```
 
 2. **Instalar as dependências:**
     
 ```bash
-npm install
+npm init -y
+npm install express
 ```
     
 3. **Configurar o arquivo `.env`:**
@@ -40,7 +41,7 @@ Configuração do Banco de Dados
 npm run init-db
 ```
     
-Isso criará a tabela `users` no seu banco de dados PostgreSQL com UUID como chave primária e inserirá alguns registros de exemplo.
+Isso criará a tabela `usuário, ingresso, eventos e notificações` no seu banco de dados PostgreSQL com UUID como chave primária e inserirá alguns registros de exemplo.
     
 
 Funcionalidades
