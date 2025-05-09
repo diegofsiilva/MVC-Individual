@@ -33,4 +33,6 @@ CREATE TABLE eventos (
     localizacao VARCHAR(255),
     horario TIMESTAMP
 );
+INSERT INTO eventos (id, nomeEvento, localizacao) VALUES (1,'tardezinha', 'São Paulo');
+INSERT INTO eventos (id, nomeEvento, localizacao) VALUES (2,'HH', 'São Paulo');
 INSERT INTO eventos (id, nomeEvento, localizacao) VALUES (3,'Tanterada', 'São Paulo');
