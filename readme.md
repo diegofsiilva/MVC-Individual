@@ -1,6 +1,17 @@
 # Plataforma de Eventos MVC em Node.js com PostgreSQL
 
-Este projeto é uma Plataforma de Eventos (DIEvents) básico para uma aplicação Node.js seguindo o padrão MVC (Model-View-Controller), utilizando PostgreSQL como banco de dados.
+Este projeto é a **Plataforma de Eventos (DIEvents)**, uma aplicação web desenvolvida para organizar e gerenciar eventos, seguindo o padrão MVC (Model-View-Controller). Utiliza Node.js como backend, PostgreSQL como banco de dados relacional e EJS para renderização de interfaces.
+
+## Descrição do Sistema
+
+A **Plataforma de Eventos (DIEvents)** é uma solução web que simplifica a criação, gerenciamento e participação em eventos. Desenvolvida como projeto da ponderada do INTELI, a aplicação permite que organizadores cadastrem eventos com detalhes como título, data, local, etc. enquanto participantes podem buscar eventos e se inscrever. O sistema segue o padrão MVC para garantir uma estrutura organizada, com o backend gerenciando a lógica e o banco de dados, e o frontend (ainda será desenvolvido) oferecendo uma interface amigável renderizada com EJS.
+
+**Funcionalidades principais**:
+- Cadastro e autenticação de usuários.
+- Criação, edição e exclusão de eventos.
+- Busca e inscrição em eventos.
+- Notificações de confirmação de inscrição.
+- Interface responsiva para acesso em desktop e dispositivos móveis.
 
 ## Requisitos
 
@@ -12,8 +23,8 @@ Este projeto é uma Plataforma de Eventos (DIEvents) básico para uma aplicaçã
 1. **Clonar o repositório:**
 
 ```bash
-   git clone https://github.com/diegofsiilva/MVC-Individual.git
-   cd MVC-individual 
+git clone https://github.com/diegofsiilva/MVC-Individual.git
+cd MVC-Individual
 ```
 
 2. **Instalar as dependências:**
@@ -26,6 +37,13 @@ npm install express
 3. **Configurar o arquivo `.env`:**
     
 Renomeie o arquivo `.env.example` para `.env` e configure as variáveis de ambiente necessárias, como as configurações do banco de dados PostgreSQL.
+```bash
+DB_HOST=localhost
+DB_USER=seu_usuario
+DB_PASSWORD=sua_senha
+DB_NAME=dievents
+DB_PORT=5432
+```
     
 
 Configuração do Banco de Dados
@@ -44,22 +62,16 @@ npm run init-db
 Isso criará a tabela `usuário, ingresso, eventos e notificações` no seu banco de dados PostgreSQL com UUID como chave primária e inserirá alguns registros de exemplo.
     
 
-Funcionalidades
----------------
 
-* **Padrão MVC:** Estrutura organizada em Model, View e Controller.
-* **PostgreSQL:** Banco de dados relacional utilizado para persistência dos dados.
-* **UUID:** Utilização de UUID como chave primária na tabela `users`.
-* **Scripts com `nodemon`:** Utilização do `nodemon` para reiniciar automaticamente o servidor após alterações no código.
-* **Testes:** Inclui estrutura básica para testes automatizados.
-
-Scripts Disponíveis
+Como Executar o Projeto Localmente
 -------------------
 
 * `npm start`: Inicia o servidor Node.js.
-* `npm run dev`: Inicia o servidor com `nodemon`, reiniciando automaticamente após alterações no código.
-* `npm run test`: Executa os testes automatizados.
-* `npm run test:coverage`: Executa os testes e gera um relatório de cobertura de código.
+
+* `node app.js`: Inicia o servidor App.js
+    Abra um navegador e acesse http://localhost:3000
+
+
 
 Estrutura de Diretórios
 -----------------------
