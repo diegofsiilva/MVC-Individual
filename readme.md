@@ -63,13 +63,57 @@ Scripts Disponíveis
 
 Estrutura de Diretórios
 -----------------------
-
-* **`config/`**: Configurações do banco de dados e outras configurações do projeto.
-* **`controllers/`**: Controladores da aplicação (lógica de negócio).
-* **`models/`**: Modelos da aplicação (definições de dados e interações com o banco de dados).
-* **`routes/`**: Rotas da aplicação.
-* **`tests/`**: Testes automatizados.
-* **`views/`**: Views da aplicação (se aplicável).
+```bash
+meu-projeto/
+│
+├── assets/                 # Arquivos públicos como imagens e fontes
+|   └──favicon.ico
+|   └──logointeli.png
+├── config/                # Arquivos de configuração (ex: conexão com banco)
+│   └── db.js
+├── controllers/           # Lógica de controle das requisições
+│   └── alunoController.js
+|   └── userController.js
+├── documentos/            # Descrição do projeto e documentos 
+│   └── diagramBD.png
+|   └── wad.md
+├── models/                # Definição de modelos de dados (estrutura do banco)
+│   └── alunos.js
+│   └── userModel.js
+├── routes/                # Definição das rotas do sistema
+│   └── alunos.js
+│   └── frontRouter.js
+│   └── userRoutes.js
+├── scripts/               # Arquivos de JavaScript públicos e criação das tabelas do Banco de Dados
+│   └── init.sql
+│   └── runSQLScript.js
+├── services/              # Serviços auxiliares do sistema
+│   └── userService.js
+├── tests/                 # Arquivos de testes unitários
+│   └── userController.js
+│   └── userModel.test.js
+│   └── userRoutes.test.js
+│   └── userService.test.js
+├── views/                 # Arquivos de testes unitários
+│   └── alunos/
+|        └── index.ejs
+│   └── components/
+|        └── header.ejs
+│   └── css/
+|        └── styles.css
+│   └── layout/
+|        └── main.ejs
+│   └── pages/
+|        └── page1.ejs
+|        └── page2.ejs
+├── .gitignore             # Arquivo para ignorar arquivos no      Git (ex: node_modules)
+├── app.js              # Arquivo principal que inicializa o servidor
+├── jest.config.js         # Arquivo de configuração do Jest
+├── package-lock.json      # Gerenciador de dependências do Node.js
+├── package.json           # Gerenciador de dependências do Node.js
+├── readme.md              # Documentação do projeto (Markdown)
+└── rest.http              # Teste de endpoints (opcional)
+```
 
 Contribuição
 ------------

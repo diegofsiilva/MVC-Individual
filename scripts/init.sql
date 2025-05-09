@@ -31,7 +31,7 @@ CREATE TABLE eventos (
     id INTEGER PRIMARY KEY,
     nomeEvento VARCHAR(255),
     localizacao VARCHAR(255),
-    horario TIMESTAMP
+    data TIMESTAMP
 );
 INSERT INTO eventos (id, nomeEvento, localizacao) VALUES (1,'tardezinha', 'São Paulo');
 INSERT INTO eventos (id, nomeEvento, localizacao) VALUES (2,'HH', 'São Paulo');
