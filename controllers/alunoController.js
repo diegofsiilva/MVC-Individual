@@ -5,6 +5,7 @@ exports.index = async (req, res) => {
   res.render('alunos/index', { alunos });
 };
 
+
 exports.store = async (req, res) => {
   await Aluno.create(req.body);
   res.redirect('/alunos');
